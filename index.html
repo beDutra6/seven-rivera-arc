@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Site made with Mobirise Website Builder v4.8.1, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.8.1, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <meta name="description"
+          content="Campeonato de Rugby de Seven jugado en la ciudad de Rivera, Organizado por Arlequines Rugby Club">
+    <meta name="keywords"
+          content="rugby frontera rivera brasil arlequines deporte atilio paiva URU teros seven">
+    <title>Seven Rivera</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css" type="text/css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/theme/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="stylesheet" href="assets/custom/styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+<section class="cid-r1MZ2luPck mbr-fullscreen mbr-parallax-background" id="header2-5">
+
+
+    <div class="container align-center">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white">
+                <div class="logo">
+                    <img src="assets/custom/images/logo-2018-sin-texto.png">
+                </div>
+                <h1 class="mbr-section-title  font-seven  titulo">
+                    4º Seven Rivera</h1>
+                <h4>30 de Noviembre de 2019</h4>
+                <h5>Estadio Atilio Paiva Olivera - Rivera, Uruguay</h5>
+
+
+            </div>
+        </div>
+        <div class="countdown1 cid-r1N07t22tI font-seven" id="countdown1-8">
+            <div class="container countdown-cont align-center">
+                <div class="daysCountdown" title="Días"></div>
+                <div class="hoursCountdown" title="Horas"></div>
+                <div class="minutesCountdown" title="Minutos"></div>
+                <div class="secondsCountdown" title="Segundos"></div>
+                <div class="countdown mt-2" data-due-date="2019/11/30 14:00">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="fa fa-arrow-down"></i>
+        </a>
+    </div>
+</section>
+<section class="cid-r1MYdPhilR" id="video3-4">
+
+
+    <figure class="mbr-figure align-center container">
+        <div class="video-block" style="width: 80%;">
+            <div>
+                <iframe class="mbr-embedded-video"
+                        src="https://www.youtube.com/embed/L9bpP4vrL5c"
+                        width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </figure>
+</section>
+
+<section id="equiposParticipantes" class="mbr-parallax-background">
+    <div id="equipos" class="equipos">
+        <div class="flex-center h3"><label>Equipos</label></div>
+
+        <div class="flex-center h4"><label>Masculinos</label></div>
+        <div class="cards">
+            <div class="equipo" v-for="equipo in masculinos" data-aos="zoom-in">
+                <div class="logo-equipo">
+                    <img :src="equipo.imgSrc">
+                </div>
+                <div class="label-1 flex-center">
+                    <h4>{{equipo.nombre}}</h4>
+                </div>
+                <div class="label-2 flex-center">
+                    <span>{{equipo.ciudad}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-center h4" style="padding-top: 30px;"><label>Femeninos</label></div>
+        <div class="cards">
+            <template v-for="equipo in femeninos" >
+                <div class="equipo" data-aos="zoom-in" v-if="equipo.nombre">
+                    <div class="logo-equipo">
+                        <img :src="equipo.imgSrc">
+                    </div>
+                    <div class="label-1 flex-center">
+                        <h4>{{equipo.nombre}}</h4>
+                    </div>
+                    <div class="label-2 flex-center">
+                        <span>{{equipo.ciudad}}</span>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="patr" class="mbr-parallax-background logos-sec">
+    <div id="patrocinadores" class="sponsors">
+        <div class="patrocinadoresSec">
+            <div class="flex-center h3" style="padding-bottom: 30px"><label>Patrocinadores</label></div>
+            <div class="patrocinios-grid">
+                <div class="patrocinio-wrapper" v-for="patrocinio in patrocinadoresCopas">
+                    <div class="patrocinioppp"
+                         :style="{background: 'url('+patrocinio.imgSrc+')'}">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr/>
+        <div class="colaboradoresSec">
+            <div class="flex-center h4"><label>Colaboradores</label></div>
+            <div class="patrocinios-grid colaboran-grid">
+                <div class="patrocinio-wrapper" v-for="colaborador in colaboradores">
+                    <div class="colaboro"
+                         v-bind:style="{background: 'url('+colaborador.imgSrc+')'}">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr/>
+        <div class="apoyanSec">
+            <div class="flex-center h4"><label>Apoyan</label></div>
+            <div class="patrocinios-grid apoyan-grid">
+                <div class="patrocinio-wrapper" v-for="apoyo in apoyan">
+                    <div class="apoyo"
+                         v-bind:style="{background: 'url('+apoyo.imgSrc+')'}">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr/>
+        <div class="organiza">
+            <div class="flex-center h5"><label>Organiza</label></div>
+            <div class="organiza-logo">
+                <div class="img-patrocinio flex-center">
+                    <img :src="organiza.imgSrc">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section once="" class="cid-r1MZwUVRQW" id="footer7-7">
+
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+
+            <div class="row social-row">
+                <div class="social-list align-right pb-2">
+
+
+                    <div class="soc-item">
+                        <a href="https://www.facebook.com/arlequinesrugby/" target="_blank">
+                            <span class="social"><i class="fab fa-facebook-square"></i></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://twitter.com/arlequinesrugby?lang=es" target="_blank">
+                            <span class="social"><i class="fab fa-twitter"></i></span>
+
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://www.instagram.com/arlequinesrugby/" target="_blank">
+                            <span class="social"><i class="fab fa-instagram"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-copirayt">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/parallax/jarallax.min.js"></script>
+<script src="assets/countdown/jquery.countdown.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="https://unpkg.com/vue"></script>
+<script src="assets/custom/vue/equipos-participantes.js"></script>
+<script src="assets/custom/vue/sponsors.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108977185-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108977185-1');
+</script>
+</body>
+</html>

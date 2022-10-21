@@ -1,0 +1,26 @@
+{
+  "name": "seven-arc",
+  "version": "1.0.0",
+  "description": "pagina web del seven arc ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusdutra/seven-arc.git"
+  },
+  "keywords": [
+    "seven",
+    "arc"
+  ],
+  "author": "adutra",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/agusdutra/seven-arc/issues"
+  },
+  "homepage": "https://github.com/agusdutra/seven-arc#readme",
+  "devDependencies": {
+    "firebase-tools": "^7.3.1"
+  }
+}
